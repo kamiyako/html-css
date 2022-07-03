@@ -30,6 +30,7 @@ header {
   height: 150px;
   background-image: url(img/flow01.png);
   background-position: center;
+  background-repeat: no-repeat;
   background-size: 280px 150px;
   border: 10px solid #EEEEEE;
 }
@@ -39,6 +40,7 @@ header {
   height: 150px;
   background-image: url(img/flow02.png);
   background-position: center;
+  background-repeat: no-repeat;
   background-size: 280px 150px;
   border: 10px solid #EEEEEE;
 }
@@ -48,6 +50,7 @@ header {
   height: 150px;
   background-image: url(img/flow03.png);
   background-position: center;
+  background-repeat: no-repeat;
   background-size: 280px 150px;
   border: 10px solid #EEEEEE;
 }
@@ -58,6 +61,7 @@ header {
   margin-top: -10px;
   margin-left: -10px;
   background-color: #FF9A4B;
+  z-index: 100; 
 
 }
 
@@ -89,3 +93,42 @@ footer {
   height: 50px;
   width: 100%;
 }
+
+@media screen and (max-width: 768px) {
+  .boxes {
+    flex-direction: column;
+    gap: 20px;
+
+  }
+
+  .box1 {
+    width: 90%;
+  }
+
+
+  .text {
+    width: 90%;
+  }
+
+
+  .text,.box1 {
+    width: 90%;
+    margin: auto;
+  }
+  
+  .box3 {
+    margin-left: -5%;
+  }
+
+
+  img {
+  width: 100%;
+
+  }
+  .img1,.img2,.img3{
+    background-size: auto;
+    width: 90%;
+    background-position: center;
+    margin: auto;
+  }
+  }
